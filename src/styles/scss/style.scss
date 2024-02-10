@@ -81,11 +81,11 @@ margin-top: -16px;
 	background: #ffffff;
 	position: absolute;
 	top: -150%;
-	transition: 3000ms;
+	transition: 5000ms;
 	transform: translateY(110%);
 }
 .burger.die.active{
-	transform: translateY(100%);
+	transform: translateY(110%);
 	overflow-y: auto;
 }
 .container {
