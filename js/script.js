@@ -20,9 +20,11 @@ tN();
 function burgerf() {
 	if (topNav.classList.contains('add')) {
 		burger.classList.add('der')
+		burgerMenu.classList.toggle('active')
 		console.log('add der')
 	} else {
 		burger.classList.remove('der')
+		burgerMenu.classList.remove('active');
 		console.log('remove der ')
 	}
 }
@@ -42,5 +44,5 @@ function burgerMenuf(event) {
 document.addEventListener('click', burgerMenuf);
 window.addEventListener('resize', tN);
 window.addEventListener('resize', burgerMenuf);
-tN(); 
+tN();
 // my

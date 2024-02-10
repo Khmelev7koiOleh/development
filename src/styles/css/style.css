@@ -96,8 +96,8 @@ body {
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
   margin-top: -16px;
-  background: #bb6363;
-  position: fixed;
+  background: #ffffff;
+  position: absolute;
   top: -150%;
   -webkit-transition: 3000ms;
   transition: 3000ms;
@@ -106,7 +106,7 @@ body {
           transform: translateY(110%);
 }
 
-.burger.active {
+.burger.die.active {
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
