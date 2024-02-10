@@ -3,6 +3,7 @@ body{
 	background: #ffff;
 	width: auto;
 	overflow-x: hidden;
+	overflow-y: auto;
 }
 .wrapper{
 
@@ -70,17 +71,22 @@ background: #000;
 
   
 
-
 .burger__menu {
 	display: none;
 }
 .burger__menu.die{
 	display: flex;
-    flex-direction: column;
+	flex-direction: column-reverse;
 margin-top: -16px;
-	background: #ffffff;
-	z-index: 9;
-	
+	background: #bb6363;
+	position: fixed;
+	top: -150%;
+	transition: 3000ms;
+	transform: translateY(110%);
+}
+.burger.active{
+	transform: translateY(100%);
+	overflow-y: auto;
 }
 .container {
 }

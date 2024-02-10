@@ -29,12 +29,14 @@ function burgerf() {
 function burgerMenuf(event) {
 	if (event.target.closest('.burger__li')) {
 		burgerMenu.classList.toggle('die')
-		burgerMenu.style.height = burgerMenu.classList.contains('die') ? 'auto' : 0;
+		burgerMenu.classList.toggle('active')
+		burgerMenu.classList.add('shadow')
 		wrapper.classList.toggle('display__none')
 		console.log('toggle die')
 	} else if (!burger.classList.contains('der')) {
 		burgerMenu.classList.remove('die');
-
+		burgerMenu.classList.remove('shadow')
+		burgerMenu.classList.remove('active');
 	}
 }
 document.addEventListener('click', burgerMenuf);
