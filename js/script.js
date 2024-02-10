@@ -1,43 +1,44 @@
+const wrapper = document.querySelector('.wrapper');
 const topNav = document.querySelector('.top__nav');
-const remove = () => {
-	topNav.innerHTML = ""
- };
-
- // Додаємо обробник подій для події прокрутки
- window.addEventListener('scroll', () => {
-	// Координата, при якій ми хочемо викликати функцію
-	const targetCoordinate = 850;
-
-	// Перевіряємо, чи вже прокручено на достатню відстань
-	if (window.pageYOffset >= targetCoordinate) {
-	  // Викликаємо функцію, якщо умова виконана
-	  remove();
+const burger = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger__menu');
+function tN() {
+	const windowWidth = window.innerWidth;
+	if (windowWidth <= 1024) {
+		topNav.classList.add('add')
+		burgerMenu.classList.remove('die')
+		wrapper.classList.remove('display__none')
+		burgerf();
+		console.log('add add')
+	} else {
+		topNav.classList.remove('add')
+		burgerf();
+		console.log('remove add')
 	}
- });
- window.addEventListener('scroll', () => {
-	// Координата, при якій ми хочемо викликати функцію
-	const targetCoordinate = 849;
-
-	// Перевіряємо, чи вже прокручено на достатню відстань
-	if (window.pageYOffset >= targetCoordinate) {
-	  // Викликаємо функцію, якщо умова виконана
-	  add();
-	}
- });
-
-/*const topNav = document.querySelector('.top__nav');
-if(){
-	topNav.innerHTML = "";
 }
-$('.main').bind('mousewheel', function(e){
-	if(e.wheelDelta< 0) {
-		 //scroll down
-		 console.log('Down');
-	}else {
-		 //scroll up
-		 console.log('Up');
+tN();
+function burgerf() {
+	if (topNav.classList.contains('add')) {
+		burger.classList.add('der')
+		console.log('add der')
+	} else {
+		burger.classList.remove('der')
+		console.log('remove der ')
 	}
+}
+function burgerMenuf(event) {
+	if (event.target.closest('.burger__li')) {
+		burgerMenu.classList.toggle('die')
+		burgerMenu.style.height = burgerMenu.classList.contains('die') ? 'auto' : 0;
+		wrapper.classList.toggle('display__none')
+		console.log('toggle die')
+	} else if (!burger.classList.contains('der')) {
+		burgerMenu.classList.remove('die');
 
-	//prevent page fom scrolling
-	return false;
-});*/
+	}
+}
+document.addEventListener('click', burgerMenuf);
+window.addEventListener('resize', tN);
+window.addEventListener('resize', burgerMenuf);
+tN(); 
+// my

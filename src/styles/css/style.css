@@ -17,8 +17,191 @@ body {
   z-index: 100;
 }
 
-.top__navadd {
+.top__nav.add {
+  display: none;
+}
+
+.display__none {
+  display: none;
+}
+
+.burger {
+  display: none;
+}
+
+.burger.der {
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  line-height: 11px;
+  list-style-type: none;
+  background: #FFFFFF;
+}
+
+.burger.shadow {
+  -webkit-box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.burger__li {
+  border-bottom: 1px solid #000;
+  border-radius: 30px;
+  text-align: center;
+  padding: 0 20px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.burger__li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.one {
   background: #000;
+}
+
+.two {
+  background: #292828;
+  color: #292828;
+}
+
+.three {
+  background: #686666;
+  color: #686666;
+}
+
+.burger__menu {
+  display: none;
+}
+
+.burger__menu.die {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -16px;
+  background: #ffffff;
+  z-index: 9;
+}
+
+.burder__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding-right: 400px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.burger__item1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.burger__item1:hover {
+  font-size: 36px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(45, 147, 230);
+}
+
+.burger__item2:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item3:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item3:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item4:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item5:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item6:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item-calendar:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item-clock:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item-map:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item-phone:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
+}
+
+.burger__item-country:hover {
+  font-size: 31px;
+  font-weight: 600;
+  text-shadow: 1px 1px 10px rgb(5, 48, 21);
+  color: rgb(35, 122, 67);
 }
 
 .container {

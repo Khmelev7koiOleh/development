@@ -12,12 +12,41 @@
 </head>
 
 <body>
+
+	<ul class="burger">
+		<li class="burger__li one"><a type="button">.</a></li>
+		<li class="burger__li two"><a type="button">.</a></li>
+		<li class="burger__li three"><a type="button">.</a></li>
+	</ul>
+	<div class="burger__menu">
+		<div class="container">
+			<div class="content">
+				<div class="burger__row">
+					<div class="burder__body">
+						<p class="burger__item1">Главная</p>
+						<p class="burger__item2">О нас</p>
+						<p class="burger__item3">Услуги</p>
+						<p class="burger__item4">Цены</p>
+						<p class="burger__item5">Новости</p>
+						<p class="burger__item6">Контакты</p>
+						<div class="burger__item-blockone">
+							<p class="burger__item-calendar">Пн - Пт</p>
+							<p class="burger__item-clock">9.00 - 18.00</p>
+						</div>
+						<div class="burger__item-blocktwo">
+							<p class="burger__item-map">Алма-Атинская 8</p>
+							<p class="burger__item-phone">+38(063)578-28-30</p>
+						</div>
+						<p class="burger__item-country">UA</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="wrapper">
 		<div class="top__wrapper">
 			<header class="header">
 				<div class="top__nav">
-					<div class="container">
-						<div class="content">
 							<div class="header__row">
 								<div class="header__body">
 									<div class="header__item-logo"><img src="/src/assets/details/logo.png" alt=""></div>
@@ -36,12 +65,13 @@
 										<p class="header__item-phone">+38(063)578-28-30</p>
 									</div>
 									<p class="header__item-country">UA</p>
-
 								</div>
-							</div>
-						</div>
 					</div>
 				</div>
+				<div class="display__none"></div>
+		       <div class="shadow"></div>
+
+
 				<section class="header__about">
 
 					<div class="main__title">КАРДАН СЕРВИС</div>
@@ -61,7 +91,7 @@
 						<div class="adventages__row">
 							<div class="adventages__body">
 								<div class="adventages__item">
-									<div class="adventages__title">Наши преимущества</div>
+									<h2 class="adventages__title">Наши преимущества</h2>
 								</div>
 								<div class="adventages__item">
 									<div class="adventages__sub-title">Почему вам стоит выбрать нас?</div>
@@ -133,11 +163,9 @@
 			<section class="padding"></section>
 			<section class="work">
 				<div class="work__title-body">
-					<div class="title">
-						<p>
-							Как мы работаем
-						</p>
-					</div>
+					<h2 class="title">
+						Как мы работаем
+					</h2>
 				</div>
 			</section>
 			<section class="description__container">
@@ -205,10 +233,9 @@
 					</div>
 				</div>
 			</section>
-	</div>
 	<section class="service">
 		<div class="service__title">
-			<p>Наши Услуги</p>
+			<h2>Наши Услуги</h2>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -272,9 +299,9 @@
 	</section>
 	<section class="advertisement">
 		<div class="advertisement__title">
-			<p>
+			<h2>
 				О нас говорят
-			</p>
+			</h2>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -319,9 +346,9 @@
 	</section>
 	<section class="reviews">
 		<div class="reviews__title">
-			<p>
+			<h2>
 				Отзывы
-			</p>
+			</h2>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -362,8 +389,10 @@
 							</div>
 							<div class="reviews__review-two">
 								<p class="word__of-power">Лучшие в Украине</p>
-								<div class="comment"><span>Мне понравилось. Приехал -</span><br><span>диагностика, согласование </span><br><span> запчастей и
-									стоимости, </span><br><span> вечером машина была уже </span><br><span> готова. Цены адекватны и <br> <span>быстро.</span></span></div>
+								<div class="comment"><span>Мне понравилось. Приехал -</span><br><span>диагностика, согласование
+									</span><br><span> запчастей и
+										стоимости, </span><br><span> вечером машина была уже </span><br><span> готова. Цены
+										адекватны и <br> <span>быстро.</span></span></div>
 							</div>
 						</div>
 
@@ -403,4 +432,5 @@
 	</div>
 	<script src="/js/script.js"></script>
 </body>
+
 </html>
