@@ -91,26 +91,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
   margin-top: -16px;
-  background: #bb6363;
-  position: fixed;
-  top: -150%;
-  -webkit-transition: 3000ms;
-  transition: 3000ms;
-  -webkit-transform: translateY(110%);
-      -ms-transform: translateY(110%);
-          transform: translateY(110%);
+  background: #ffffff;
 }
 
-.burger.active {
-  -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-          transform: translateY(100%);
-  overflow-y: auto;
+.burger.die.active {
+  margin-top: -150px;
+  margin-left: 50px;
+  -webkit-transition: margin-top 2s;
+  transition: margin-top 2s;
 }
 
 .burder__body {
