@@ -42,7 +42,7 @@ display: none;
 	background: #FFFFFF;
 }
 .burger.shadow{
-	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 .burger__li{
 border-bottom: 1px solid #000;
@@ -76,17 +76,11 @@ background: #000;
 }
 .burger__menu.die{
 	display: flex;
-	flex-direction: column-reverse;
 margin-top: -16px;
 	background: #ffffff;
-	position: absolute;
-	top: -150%;
-	transition: 3000ms;
-	transform: translateY(110%);
 }
 .burger.die.active{
-	transform: translateY(100%);
-	overflow-y: auto;
+	
 }
 .container {
 }
