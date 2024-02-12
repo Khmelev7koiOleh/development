@@ -2,6 +2,14 @@ const wrapper = document.querySelector('.wrapper');
 const topNav = document.querySelector('.top__nav');
 const burger = document.querySelector('.burger');
 const burgerMenu = document.querySelector('.burger__menu');
+const country = document.querySelector('.header__contries');
+const counrtyItem = document.querySelector('.header__item-contry');
+const lBlockOne = document.querySelector('.l__block-one');
+const lBlockTwo = document.querySelector('.l__block-two');
+const ua = document.querySelector('.ua');
+const en = document.querySelector('.en');
+const u = document.querySelector('.u');
+const e = document.querySelector('.e');
 function tN() {
 	const windowWidth = window.innerWidth;
 	if (windowWidth <= 1024) {
@@ -49,10 +57,41 @@ function animation(event) {
 		console.log('remove add')
 	}
 }
-setTimeout(animation, 1000);
-document.addEventListener('click', animation)
+function language(event) {
+	if (event.target.closest('.ua')) {
+		ua.classList.toggle('up')
+		en.classList.toggle('glish')
+		country.classList.toggle('bg')
+	}
+}
+function swap(event) {
+	if (event.target.closest('.en')) {
+		en.classList.toggle('bgd')
+		lBlockOne.classList.add('mir')
+		lBlockTwo.classList.add('mir')
+	}
+}
+function swapback(event) {
+	if (event.target.closest('.u')) {
+		en.classList.toggle('bgd')
+		lBlockOne.classList.remove('mir')
+		lBlockTwo.classList.remove('mir')
+	}
+}
+function pop(event) {
+	if (event.target.closest('.e')) {
+		e.classList.toggle('up')
+		u.classList.toggle('remove')
+	}
+}
+document.addEventListener('click', pop);
+document.addEventListener('click', swapback);
+document.addEventListener('click', swap);
+document.addEventListener('click', language);
+document.addEventListener('click', animation);
 document.addEventListener('click', burgerMenuf);
 window.addEventListener('resize', tN);
 window.addEventListener('resize', burgerMenuf);
 tN();
+language();
 // my

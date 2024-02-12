@@ -388,6 +388,70 @@ body {
   padding-top: 10px;
 }
 
+.header__contries.bg {
+  background: #2b2828;
+  border-bottom: 1px solid #000;
+}
+
+.l__block-one.mir {
+  display: none;
+}
+
+.l__block-two {
+  display: none;
+}
+
+.l__block-two.mir {
+  display: block;
+}
+
+.ua.glish {
+  display: block;
+}
+
+.u.glish {
+  display: block;
+}
+
+.u.remove {
+  display: none;
+}
+
+.en.s {
+  background: #000;
+}
+
+.e::after {
+  content: "˅";
+  padding-left: 10px;
+}
+
+.e.up::after {
+  content: "˄";
+  padding-left: 10px;
+}
+
+.ua::after {
+  content: "˅";
+  padding-left: 10px;
+}
+
+.ua.up::after {
+  content: "˄";
+}
+
+.en {
+  display: none;
+}
+
+.en.glish {
+  display: block;
+}
+
+.en.glish.bgd {
+  background: rgb(4, 26, 75);
+}
+
 .header__about {
   position: relative;
   top: 300px;
