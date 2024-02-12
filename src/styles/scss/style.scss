@@ -76,17 +76,13 @@ background: #000;
 }
 .burger__menu.die{
 	display: flex;
-	flex-direction: column-reverse;
 margin-top: -16px;
 	background: #ffffff;
-	position: absolute;
-	top: -150%;
-	transition: 5000ms;
-	transform: translateY(110%);
 }
 .burger.die.active{
-	transform: translateY(110%);
-	overflow-y: auto;
+	margin-top: -150px;
+	margin-left: 50px;
+	transition: margin-top 2s;
 }
 .container {
 }
@@ -344,6 +340,64 @@ background-size: 18px 18px;
 	padding-right: 1px;
 	padding-left: 20px;
 	padding-top: 10px;
+}
+.header__item-country{
+}
+.header__contries{
+}
+.header__contries.bg{
+background: #2b2828;
+border-bottom: 1px solid #000;
+}
+.l__block-one {
+}
+.l__block-one.mir{
+	display: none;
+}
+.l__block-two {
+	display: none;
+}
+.l__block-two.mir{
+	display: block;
+}
+
+.ua{
+}
+.ua.glish{
+	display: block;
+}
+.u.glish{
+	display: block;
+}
+.u.remove{
+ display: none;
+}
+.en.s{
+	background: #000;
+}
+.e::after{
+	content: "˅";
+	padding-left: 10px;
+}
+.e.up::after{
+	content: "˄";
+	padding-left: 10px;
+}
+.ua::after{
+	content: "˅";
+	padding-left: 10px;
+}
+.ua.up::after{
+	content: "˄";
+}
+.en{
+	display: none;
+}
+.en.glish{
+	display: block;
+}
+.en.glish.bgd{
+	background: rgb(4, 26, 75);
 }
 .header__about {
 position: relative;
