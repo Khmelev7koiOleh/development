@@ -77,7 +77,8 @@ background: #000;
 .burger__menu.die{
 	display: flex;
 margin-top: -16px;
-	background: #ffffff;
+	background: #000000;
+	color: wheat;
 }
 .burger.die.active{
 	margin-top: -150px;
@@ -377,14 +378,17 @@ border-bottom: 1px solid #000;
 }
 .e::after{
 	content: "˅";
+	color: #1da03e;
 	padding-left: 10px;
 }
 .e.up::after{
 	content: "˄";
+	color: #1da03e;
 	padding-left: 10px;
 }
 .ua::after{
 	content: "˅";
+	color: #1da03e;
 	padding-left: 10px;
 }
 .ua.up::after{

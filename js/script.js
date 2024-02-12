@@ -86,6 +86,12 @@ function pop(event) {
 		u.classList.toggle('remove')
 	}
 }
+function out(event) {
+	if (event.target.closest('.body')) {
+		en.classList.remove('glish')
+	}
+}
+document.addEventListener('click', out);
 document.addEventListener('click', pop);
 document.addEventListener('click', swapback);
 document.addEventListener('click', swap);
