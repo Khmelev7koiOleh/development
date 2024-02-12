@@ -28,6 +28,7 @@ tN();
 function burgerf() {
 	if (topNav.classList.contains('add')) {
 		burger.classList.add('der')
+		burgerMenu.classList.add('shadow')
 		burgerMenu.classList.toggle('active')
 		console.log('add der')
 	} else {
@@ -41,6 +42,7 @@ function burgerMenuf(event) {
 		burgerMenu.classList.toggle('die')
 		burgerMenu.classList.add('active')
 		burgerMenu.classList.add('shadow')
+		burgerMenu.classList.toggle('active')
 		wrapper.classList.toggle('display__none')
 		console.log('toggle die')
 	} else if (!burger.classList.contains('der')) {
