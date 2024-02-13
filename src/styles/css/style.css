@@ -13,9 +13,25 @@ body {
 }
 
 .top__nav {
+  min-width: 100%;
+  position: fixed;
+  top: -1px;
+  max-height: 110px;
+  z-index: 100;
+  -webkit-transition: opacity 3s, background 3s;
+  transition: opacity 3s, background 3s;
+}
+
+.top__nav.opacity {
+  opacity: 3s;
+}
+
+.top__nav.background {
+  min-width: 100%;
   position: fixed;
   max-height: 110px;
   z-index: 100;
+  background: #2b2828;
 }
 
 .top__nav.add {
@@ -31,7 +47,7 @@ body {
 }
 
 .burger.der {
-  z-index: 10;
+  z-index: 101;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -42,17 +58,14 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  margin-top: -1.1%;
+  margin-right: -1.2%;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-right: 50px;
   line-height: 11px;
   list-style-type: none;
   background: #FFFFFF;
-}
-
-.burger.shadow {
-  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .burger__li {
@@ -88,11 +101,23 @@ body {
 }
 
 .burger__menu.die {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: -16px;
-  background: #ffffff;
+  position: fixed;
+  bottom: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: -9;
+  padding-top: 120px;
+  -webkit-transition: 3s;
+  transition: 3s;
+  display: block;
+  background: #000000;
+  color: wheat;
+}
+
+.burger__menu.die.active {
+  bottom: 100%;
+  margin-bottom: -110%;
+  padding-left: 130px;
 }
 
 .burder__body {
@@ -106,95 +131,96 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  padding-right: 400px;
-  font-size: 30px;
+  padding-right: 40px;
+  font-size: 20px;
   font-weight: 600;
+  line-height: 13px;
 }
 
 .burger__item1 {
-  font-size: 35px;
+  font-size: 25px;
   font-weight: 600;
 }
 
 .burger__item1:hover {
-  font-size: 36px;
+  font-size: 26px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(45, 147, 230);
 }
 
 .burger__item2:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item3:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item3:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item4:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item5:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item6:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item-calendar:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item-clock:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item-map:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item-phone:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
 }
 
 .burger__item-country:hover {
-  font-size: 31px;
+  font-size: 21px;
   font-weight: 600;
   text-shadow: 1px 1px 10px rgb(5, 48, 21);
   color: rgb(35, 122, 67);
@@ -416,16 +442,19 @@ body {
 
 .e::after {
   content: "˅";
+  color: #1da03e;
   padding-left: 10px;
 }
 
 .e.up::after {
   content: "˄";
+  color: #1da03e;
   padding-left: 10px;
 }
 
 .ua::after {
   content: "˅";
+  color: #1da03e;
   padding-left: 10px;
 }
 
