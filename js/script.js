@@ -25,10 +25,27 @@ function tN() {
 	}
 }
 tN();
+function scrollt() {
+	if (window.pageYOffset > 0) {
+		topNav.classList.add('background');
+	}
+}
+
+function scrollr() {
+	if (window.pageYOffset < 1) {
+		topNav.classList.toggle('opacity');
+		setTimeout(scrollrO, 500);
+	}
+}
+
+function scrollrO() {
+	topNav.classList.remove('opacity');
+	topNav.classList.remove('background');
+}
+
 function burgerf() {
 	if (topNav.classList.contains('add')) {
 		burger.classList.add('der')
-		burgerMenu.classList.toggle('active')
 		console.log('add der')
 	} else {
 		burger.classList.remove('der')
@@ -37,28 +54,22 @@ function burgerf() {
 	}
 }
 function burgerMenuf(event) {
-	if (event.target.closest('.burger__li')) {
+	if (event.target.closest('.burger')) {
 		burgerMenu.classList.toggle('die')
-		burgerMenu.classList.add('active')
-		burgerMenu.classList.add('shadow')
-		wrapper.classList.toggle('display__none')
 		console.log('toggle die')
+		wrapper.classList.toggle('display__none')
+		return animation();
 	} else if (!burger.classList.contains('der')) {
 		burgerMenu.classList.remove('die');
-		burgerMenu.classList.remove('active')
-		burgerMenu.classList.remove('shadow')
-		burgerMenu.classList.remove('active');
+	}
+}
+function animation(event) {
+	if (event.target.closest('.burger')) {
+		burgerMenu.classList.toggle('active')
+		console.log('smth add')
 	}
 }
 
-function animation(event) {
-	if ((burgerMenu.classList.contains('die'))) {
-		burgerMenu.style.marginTop = '50px';
-	} else {
-		burgerMenu.classList.remove('active')
-		console.log('remove add')
-	}
-}
 function language(event) {
 	if (event.target.closest('.ua')) {
 		ua.classList.toggle('up')
@@ -95,11 +106,13 @@ document.addEventListener('click', out);
 document.addEventListener('click', pop);
 document.addEventListener('click', swapback);
 document.addEventListener('click', swap);
-document.addEventListener('click', language);
 document.addEventListener('click', animation);
+document.addEventListener('click', language);
 document.addEventListener('click', burgerMenuf);
 window.addEventListener('resize', tN);
 window.addEventListener('resize', burgerMenuf);
+window.addEventListener('scroll', scrollt);
+window.addEventListener('scroll', scrollr);
 language();
 tN();
 // my
